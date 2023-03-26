@@ -5,192 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-
     <style>
-        html {
+        li {
+            list-style: none;
+            width: 30%;
+            border-radius: 2em;
+            border-style: groove;
+            background-color:linear-gradient (to bottom, #ffffff, #f2f2f2);
+            margin-bottom: 25px;
+            padding: 2.5px;
+            
+
+        }
+        
+        
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            background-color: chocolate;
+            border-bottom: 3px double black;
 
         }
         body {
-            
-            background: url(../A1/media/universe.png);
-            padding: 15%;
-            display:grid;
-            
-            
-           
+            background: url(./media/volca.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
 
-        }
-        h1 {
-            font-size: 30px;
-
-        }
-        h2{
-            font-size: 20px;
-        }
-        h1, h2, p, label {
-            color: #fff;
-            text-align: center;
-           
-         
-            
-        }
-        hr {
-            width: 40px;
-          
-            
         }
         main {
-            background: url(../A1/media/soul.png);
-            display: flex;
-            border: 30px;
-            border-radius: 30px;
-            box-shadow: 0 2px 4px rgba(49, 24, 24, 0.1);
-            margin: 50px;
             position: relative;
-            max-width: 1200px;
-            justify-content: space-between;
-            
-            
-            
-        }
-        article {
-            border: 50%;
-        }
-        .vibe {
-            background: url(../A1/media/black_hole.png);
-            background: #30467e unset;
-            border: 0%;
-            border-radius: 10px;
-            padding: 30px;
-            margin: auto;
-        }
-        .seyi {
-            padding: 30px;
-            text-shadow: 10pc;
-            border-radius: 30px;
-            background: url(../A1/media/soul.png);
-        }
-        aside {
-            display: flex;
-            
-        }
-        input{
-            padding: 5px;
-            border-radius: 10px;
-            border: 0px;
-            background-color: rgba(255, 255, 255, 0.5);
-            
-        }
-        input::placeholder {
-            color: #fff;
-            text-align: center;
-        }
-        .moe {
-            border: 0px;
-            line-height: 30px;
-            border: 30px;
-            border-radius: 10px;
-            background: #0C0B07;
-            margin: 20px;
-            padding: 40px;
-        }
-        button { 
-            background: linear-gradient(to bottom, #d23d2d, #fc034a, #d04b2f);
-            color: #fff;
-            display: block;
-            padding: 5px;
-            border-radius: 20px;
-            border: 30px;
-            margin: 0 auto;
-            line-height: 0 auto;
-            margin-top: 10px;
-            
+            left: 35%;
            
         }
-        div, .exe {
-            background: linear-gradient(to right, #d23d2d, #8f304b, #755f5b);
-            color: #fff;
-            text-align: center;
-            border: 10px;
-            border-radius: 20px;
-            text-decoration: none;
         }
-        a {
-            color: #fff;
-        }
-        nav ul{
-            display: flex;
-            justify-content: space-around;
-        }
-        ul.no-bullet {
-            list-style: none;
-            display: block;
-            line-height: 40px;
-        }
-       
         
 
-
     </style>
+
 </head>
 <body>
-    <header>
-    <nav>
-        <ul>
-            <li><a href="../A1/A2.html">Body system</a></li>
-            <li><a href="../A1/A1.html">Geopolitical Zones</a></li>
-            <li><a href="../A1/markup.html">Bird Service</a></li>
-            <li><a href="../A1/cascading.html">Cascading life</a></li>
-            
-        </ul>
-    </header>
-    <section class="seyi">
     <main>
-<article>
-        <h1>Welcome!</h1>
-        <hr>        
-        <section class="vibe">
-            <p>The universe is basically an animal. It grazes on the ordinary. It creates infinite idiots just to eat them.</p>
-            <p>This explains why nobody exists on purpose. Nobody belongs anywhere. we're all going to die.</p>
-            <p>Therefore, we should come to realization that to live is to risk it all; otherwise we're just an inert chunk of randomly assembled molecules drifting wherever the universe blows us.</p>
-
-            <a href="">Learn more</a>
-           
-
-
-        </article>
-
-        <aside>
-            <form action="">
-                <h2>Sign In</h2>
-                <fieldset class="moe">
-                    <label for="username">User name</label>
-                    <input type="text" name="user" id="username" placeholder="Enter User-id">
-                    <br>
-                    <label for="pwd">Password</label>
-                    <input type="password" name="pw" id="pwd" placeholder="Password">
-                    <br>
-                    <button>Submit</button>
-                    <br>
+        <section>
+            <h2>Assignment</h2>
+            <aside>
+                <h3><abbr title="hypertext markup language">HTML</abbr></h3>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="./A1.html" target="_blank">Geopolitical zones</a></li>
+                            <li><a href="./A2.html" target="_blank">Body system</a></li> 
+                            <li><a href="./signup.html" target="_blank">Form</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            
+            <aside>
+                 <h3><abbr title="cascading style sheet">CSS</h3>
                     <div>
-                          <a href="../A1/signup.html" class="exe">Create an account</a>
+                        <nav>
+                            <ul>
+                                <li><a href="./cascading.html" target="_blank">Cascading</a></li>
+                                <li><a href="./markup.html" target="_blank">Markup</a></li>
+                                <li><a href="./china.html" target="_blank">China-flag</a></li>
+                               
+                            </ul>
+                        </nav>
                     </div>
-                  
-                </fieldset class="set" >
-            </form>
-        </aside></section>
+            </aside>
+        </section>
+        <section>
+            <h2>Classwork</h2>
+            <aside>
+                <h3><abbr title="hypertext markup language">HTML</abbr></h3>
+                <div>
+                    <nav>
+                        <ul>
+                           <li><a href="./letter.html" target="_blank">Letter</a></li>
+                           <li><a href="./form.html" target="_blank">Form</a></li>
+                          
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <aside>
+                <h3><abbr title="cascading style sheet">CSS</h3>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="./demo.html" target="_blank">Flag</a></li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+            </aside>
+        </section>
     </main>
-    </section>
-    <footer>
-        <nav>
-            <ul class="no-bullet">
-                <li><a href="mailto:gideonowa@gmail.com">Contact us</a></li>
-                <li><a href="tel:+2348069930587">About us</a></li>
-                <li><a href="#">Related  articles</a></li>
-               
-                
-            </ul>
-        </nav>
-    </footer>
 </body>
 </html>

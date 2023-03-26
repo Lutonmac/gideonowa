@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up to drive</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <h2>Become a driver</h2>
+                <p><a href="#">Signup to ride</a></p>
+            </fieldset>
+            <fieldset>
+                
+                <input type="radio" name="car" id="have">
+                <label for="have">I have a car</label>
+
+                <input type="radio" name="car" id="need">
+                <label for="need">I need a car</label>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <ul>
+                    <li>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="Enter First Name" required>
+                    </li>
+                    <li><label for="sname">Last Name</label>
+                        <input type="text" name="sname" id="sname" pla>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </li>
+                    <li>
+                        <label for="pwd">Password</label>
+                        <input type="password" name="password" id="pwd">
+                    </li>
+                    <li>
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="number" id="phone">
+                    </li>
+                    <li>
+                        <label for="city">City you live in</label>
+                        <select>
+                            
+                            <optgroup label="east">
+                                <option value="Ow">Owerri</option>
+                                <option value="En">Enugu</option>
+                                <option value="ab">Aba</option>
+                                <option value="On">Onitsh</option>
+                        
+                            </optgroup>
+                            <optgroup label="west">
+                                <option value="Ib">Ibadan</option>
+                                <option value="Lg" selected>Lagos</option>
+                                <option value="Ab">Abeokuta</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li><label for="code">Invite code(optional)</label></li>
+                    <input type="text" name="code" id="code" min="7" max="7">
+                    <li>
+                        <input type="checkbox" name="agree1" id="agree1" checked>
+                        <label for="agree1">I agree to the terms and condition</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="agree2" id="agree2">
+                        <label for="agree2">I agree follow the rules</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
