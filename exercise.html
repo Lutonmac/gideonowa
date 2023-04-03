@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            background-color: rgb(73, 73, 73);
+            height: 500px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        main > * {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            grid-auto-rows: 100px;
+           
+        }
+       
+        section {
+            background-color: rgb(251, 251, 126);
+            padding: 10px;
+            border-radius: 5px;
+           
+            
+        }
+        aside {
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 5px;
+           gap: 20px;
+        }
+        article {
+            border: 2px solid rgb(171, 169, 233);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article>Monday</article>
+            <article>Tuesday</article>
+
+            <article>Wednesday</article>
+            <article></article>
+           
+            
+        </section>
+         <aside>
+                <article>Thursday</article>
+            <article>Friday</article>
+            <article>Saturday</article>
+            <article>Sunday</article>
+            </aside>
+    </main>
+</body>
+</html>

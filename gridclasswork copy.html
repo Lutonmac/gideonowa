@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            align-items: center;
+            background-color: beige;
+            height: 50px;
+            padding: 5px;
+            border-radius: 10px;
+            gap: 10px;
+        }
+        
+        
+        nav ul li:nth-of-type(-n+2) {
+            align-self: flex-start;
+            gap: 10px;
+        }
+        nav ul li:nth-of-type(n+3):nth-last-of-type(-5+6){
+            align-self: center;
+        }
+        nav ul li:nth-of-type(n+6) {
+            align-self: flex-end;
+        }
+    main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 200px 200px 150px;
+    grid-template-areas: "a a a b"
+                        "a a a b"
+                        "c c c d"
+                        "c c c d"
+                        "e e e e";
+    gap: 10px;
+}
+main > * {
+    background-color: beige;
+}
+main > :nth-child(1) {
+    grid-area: a;
+
+}
+main > :nth-child(2) {
+    grid-area: c;
+
+}
+main > :nth-child(3) {
+    grid-area: b;
+
+}
+main > :nth-child(4) {
+    grid-area: d;
+
+}
+main > :nth-child(5) {
+    grid-area: e;
+
+}
+div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+}
+div section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 10px;
+
+}
+div section:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    gap: 10px;
+}
+
+section > * {
+    background-color: fuchsia;
+}
+aside :first-of-type {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+}
+aside > * {
+    background-color: aqua;
+}
+
+</style>
+
+</head>
+<body>
+     
+    <header>
+        <nav>
+            <ul>
+                <li>Combine</li>
+                <li>Univ</li>
+                <li>Cosmo</li>
+                <li>correction</li>
+                <li>Example</li>
+                <li>Demo</li>
+                <li>Form</li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+         
+         <section>section</section>
+         <div>
+            <section>
+                <article>article</article>
+                <article>article</article>
+            </section>
+            <section>
+                <article>artcle</article>
+                <article>article</article>
+                <article>article</article>
+            </section>
+         </div>
+         <aside>
+            <article>aside</article>
+            <article>aside</article>
+         </aside>
+         <aside>aside</aside>
+         <footer>foot</footer>
+    </main>
+   
+</body>
+</html>
