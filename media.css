@@ -153,4 +153,18 @@ h2:before {
     content: "April book: ";
 
 }
+
+
+.dose {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 250px);
+    gap: 10px;
+    background-color: cyan;
+}
+.dose div:first-of-type {
+    grid-area: 1/1/2/2;
+    background-color: firebrick;
+}
+
 }
