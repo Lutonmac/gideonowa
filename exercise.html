@@ -5,58 +5,281 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        main {
-            background-color: rgb(73, 73, 73);
-            height: 500px;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        main > * {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 20px;
-            grid-auto-rows: 100px;
-           
-        }
-       
-        section {
-            background-color: rgb(251, 251, 126);
-            padding: 10px;
-            border-radius: 5px;
-           
-            
-        }
-        aside {
-            background-color: aquamarine;
-            padding: 10px;
-            border-radius: 5px;
-           gap: 20px;
-        }
-        article {
-            border: 2px solid rgb(171, 169, 233);
-            padding: 5px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
+<body class="bg-gray-950">
+    <header class="flex justify-around bg-black bg-opacity-90 h-16 fixed inset -right-0.5 -left-0.5">
+        <div class="flex justify-start h-12 mt-2 rounded-full">
+           <img src="./media/favicon_io (2)/apple-touch-icon.png" alt="picture-of-brand">
+        </div>
+        <nav class="flex justify-around">
+        <ul class="flex list-none text-white justify-end space-x-10 p-5 ml-96 text-sm">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
     <main>
-        <section>
-            <article>Monday</article>
-            <article>Tuesday</article>
+    <div class="bg-[url('https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')] bg-cover bg-center h-96">
+    <div class="grid justify-center">
+        <div class="border border-gray-900 p-5 bg-gray-800 border-solid mt-5 h-100px mt-20 rounded-3xl">
+          
+        <div class=" flex justify-center mt-10 ml-16 w-28 h-28 object-contain border-solid border-green-300 border-2 rounded-full bg-transparent" style="box-shadow: 0 0 0 5px #f0fbf3, 0 0 0 3px #d0ffdc;">
+        <img src="./media/catty.png" alt="picture-of-cat">
+    
+    </div>
+    <div>
+        <article class="text-white mt-3">
+            <h2 class="flex justify-center">OWADARA GIDEON</h2>
+             <p class="text-xs">Front-end developer and ui/ux designer</p>
+        </article>
+        <span class="flex justify-around mt-5 text-white">
+      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg></a>
+      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">
+        <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z"/>
+      </svg></a>
+      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </svg></a>
+      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+      </svg></a>
+    </span>
+       
+    </div>
+</div>
 
-            <article>Wednesday</article>
-            <article></article>
-           
+</div>
+</div>
+
+<div class="bg-gray-950 h-max mt-5">
+    <section class="grid justify-center mt-10 text-white">
+        <div class="ml-7 text-white bg-blue-600 w-5 border-solid rounded-full border border-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+        </div>
+        <div>
+        <h2 class="font-serif">About me</h2>
+        <hr class="border-green-500">
+        <hr class="border-green-500 mt-1 w-1/2 mx-auto">
+    </div>
+</section>
+        <div class="flex justify-center">
+            <article class="text-white mt-4 mr-36 ml-36 text-xs">
+                <p>Hi, my name is Owadara Gideon, and I'm a mechanical engineer and front-end developer from Nigeria. I have a deep passion for sports and enjoy staying active in my free time. I value integrity and strive to deliver high-quality work in everything I do. I'm committed to continuous growth and am always seeking out new opportunities to expand my knowledge and skills.</p>
+            </article>
             
-        </section>
-         <aside>
-                <article>Thursday</article>
-            <article>Friday</article>
-            <article>Saturday</article>
-            <article>Sunday</article>
-            </aside>
-    </main>
+        </div>
+        <div class="flex justify-around">
+        <table class="text-white mt-4 mr-64">
+            <tr>
+                <th>Personal</th>
+                <th class="flex justify-items-start mt-3 px-10">Details</th>
+        
+            </tr>
+            <tr>
+                <td class="col-span-1 text-green-300 text-xs">Birth date</td>
+                <td class="col-span-2 text-xs py-2 px-10">17-07-199_</td>
+                
+            </tr>
+            <tr>
+                <td class="text-green-300 text-xs py-2">Phone</td>
+                <td class="px-10 text-xs py-2">+234-806-993-0587</td>
+            </tr>
+            <tr>
+                <td class="text-green-300 text-xs py-2">Email</td>
+                <td class="px-10 text-xs py-2">Gideonowa@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="text-green-300 text-xs py-2">Website</td>
+                <td class="px-10 text-xs py-2"><a href="#">www.Lutonmac.com</a></td>
+            </tr>
+            <tr>
+                <td class="text-green-300 text-xs py-2">ADDRESS</td>
+                <td class="px-10 text-xs py-2">Lagos, Nigeria.</td>
+            </tr>
+            <tr>
+                <td class="text-green-300 text-xs py-2">Job Status</td>
+                <td class="px-10 text-xs py-2"><p class="bg-green-300 w-24 flex justify-center rounded-md p-1">FreeLance</p> </td>
+            </tr>
+       
+        </table>
+        <div class="mt-4">
+            <div class="grid grid-cols-1 grid-rows-1 ">
+                <h2 class="text-white">My Interest</h2>
+            </div>
+      
+
+
+        <span class="grid grid-cols-2 grid-rows-2 gap-4 justify-center ">
+           
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-playstation" viewBox="0 0 16 16">
+                    <path d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125 2.525.017 3.616.43 1.23.39 1.368.962 1.056 1.356ZM9.625 8.883v-3.86c0-.453-.083-.87-.508-.988-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985 2.207.757 2.955 1.7 2.955 3.825 0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538.386.126 1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.454 8.454 0 0 1-4.018-.323Z"/>
+                  </svg>
+                </article>
+                <article class="flex justify-center text-white">
+                   <p>Games and fun</p> 
+
+                </article>
+            </span>
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+              </svg>
+            </article>
+            <article class="flex justify-center text-white">
+               <p>Music</p> 
+            </article>
+        </span>
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-engines" viewBox="0 0 16 16">
+                <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0ZM7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3Z"/>
+              </svg></article>
+            <article class="flex justify-center text-white">
+               <p>Travel</p> 
+            </article>
+        </span>
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+                <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>
+            </article>
+            <article class="flex justify-center text-white">
+                <p>Cinema</p></article>
+            </span>
+         
+          </span>
+          <span class="grid grid-cols-2 rounded-md grid-rows-2 mt-3 gap-4">
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+              </svg>
+            </article>
+            <article class="flex justify-center text-white">
+               <p>Cars</p> 
+            </article>
+        </span>
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
+                    <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"/>
+                  </svg>
+            </article>
+            <article class="flex justify-center text-white">
+                <p>Cryptocurrency</p>
+            </article>
+        </span>
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                        <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                      </svg>
+                </article>
+                <article class="flex justify-center text-white">
+                    <p>Code</p>
+                </article>
+            </span>
+            <span class="bg-gray-500 rounded-md p-2 mt-1">
+                <article class="flex justify-center text-white border border-solid border-blue-500 bg-blue-500 w-5 ml-10 p-0.5 rounded-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quora" viewBox="0 0 16 16">
+                        <path d="M8.73 12.476c-.554-1.091-1.204-2.193-2.473-2.193-.242 0-.484.04-.707.142l-.43-.863c.525-.45 1.373-.808 2.464-.808 1.697 0 2.568.818 3.26 1.86.41-.89.605-2.093.605-3.584 0-3.724-1.165-5.636-3.885-5.636-2.68 0-3.839 1.912-3.839 5.636 0 3.704 1.159 5.596 3.84 5.596.425 0 .811-.046 1.166-.15Zm.665 1.3a7.127 7.127 0 0 1-1.83.244C3.994 14.02.5 11.172.5 7.03.5 2.849 3.995 0 7.564 0c3.63 0 7.09 2.828 7.09 7.03 0 2.337-1.09 4.236-2.675 5.464.512.767 1.04 1.277 1.773 1.277.802 0 1.125-.62 1.179-1.105h1.043c.061.647-.262 3.334-3.178 3.334-1.767 0-2.7-1.024-3.4-2.224Z"/>
+                      </svg>
+                </article>
+                <article class="flex justify-center text-white">
+                    <p>Quora</p>
+                </article>
+            </span>
+           
+          </span>
+        </div>
+       
+        </div>
+        <div class="grid justify-center">
+            <p class="border border-solid border-gray-300 text-white p-2 mt-10 hover:bg-blue-600  bg-gray-900 transition-color duration-75 ease-in  flex justify-around rounded-md">
+                <a href="#">Download cv</a>
+                <span class="p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                  </svg>
+                </span>
+            </p>
+        </div>
+        
+</div>
+
+
+<div class="bg-gray-600">
+    <div class="mt-10">
+        <div class="grid justify-center p-20">
+            <article class="text-blue-500 flex justify-center border border-solid border-blue-400 p-2 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                    <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                  </svg>
+            </article>
+            <article class="text-white mt-3">
+                <h2 class="text-xl">Skills</h2>
+                <hr class="border-green-300">
+                <hr class="border-green-300 w-1/2 mx-auto mt-1">
+            </article>
+
+        </div>
+        <div class="flex justify-center mb-1">
+            <table class="text-white col-span-2 border border-solid border-green-200 p-10 mb-6">
+                <tr>
+                    <th class=" flex justify-start px-10">Technical Skill</th>
+                    <th class="px-10">Professional Skills</th>
+                </tr>
+                <tr>
+                    <td class="px-10">Javascript</td>
+                    <td class="px-10">Communication</td>
+                </tr>
+                <tr>
+                    <td class="px-10">Html, CSS & Tailwind</td>
+                    <td class="px-10">TeamWork</td>
+                </tr>
+                <tr>
+                    <td class="px-10">Design</td>
+                    <td class="px-10">Creativity</td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+</div>
+</main>
+<footer class="grid grid-cols-1 grid-rows-1 py-10">
+    <div class=" bg-transparent mt-10 py-10">
+        <ul class="flex justify-around text-white">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">License</a></li>
+        </ul>
+    
+    </div>
+    <hr class="w-2/3 ml-60">
+</footer>
 </body>
 </html>
